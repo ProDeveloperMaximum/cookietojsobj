@@ -1,5 +1,6 @@
 module.exports.cookieToJSOBJ = (c) => {
-  let c2 = decodeURIComponent(c).split(";")
+
+  let c2 = decodeURIComponent(c.replaceAll(" ", "")).split(";")
   let res = ""
   for (var i = 0; i < c2.length; i++){
     c2[i] = c2[i].split("=")

@@ -9,5 +9,5 @@ $ npm i cookietojsobj --save
 const mod = require("cookietojsobj")
 
 mod.cookieToJSOBJ("name=heseneli;sname=kadirov")
-// output: {name:heseneli,sname:kadirov}
+// output: {name:"heseneli",sname:"kadirov"}
 ```
